@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    ports:
+      - "5433:5432"  # Mapeia a porta 5433 do host para a porta 5432 do contêiner
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: backenddb
+
